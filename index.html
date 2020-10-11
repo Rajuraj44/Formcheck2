@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <form id="validate-me-plz">
+      <div>
+          Required: <input type="text" name="firstName" data-rule-required="true" />
+      </div>
+    <div>
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+  
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+  
+  <script type="text/javascript">
+   $(document).ready(function(){
+      $('#validate-me-plz').validate();
+    });
+  </script>
+</html>
